@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Проверка текста</h1>
+    </header>
+    <main>
+        <p id="text"></p>
+        <form class="checkboxes" onchange="highlightText()">
+            <div>
+                <div>
+                    <input type="radio" id="wordsMoreThanEightSimbols" name="contact" value="wordsMoreThanEightSimbols">
+                    <label for="wordsMoreThanEightSimbols">Слова длиннее 8 символов</label>
+                </div>
+                <div>
+                    <input type="radio" id="wordsStartedFromVowels" name="contact" value="wordsStartedFromVowels">
+                    <label for="wordsStartedFromVowels">Слова, начинающиеся с гласной</label>
+                </div>
+                <div>
+                    <input type="radio" id="wordsFinishedWithTsya" name="contact" value="wordsFinishedWithTsya">
+                    <label for="wordsFinishedWithTsya">Слова, оканчивающиеся на "ться" или "тся"</label>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
